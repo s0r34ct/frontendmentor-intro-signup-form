@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background: #ff7a7a url("../images/bg-intro-desktop.png") repeat center/cover;
+}
+
+.page-wrapper {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10%;
+}
+
+.introduction {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.introduction p {
+  font-weight: 500;
+}
+
+.signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.annotation-card {
+  background-color: #6055a5;
+  border-radius: 10px;
+  padding: 1rem 0;
+  text-align: center;
+  padding: 1rem 20%;
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.annotation-card .bold {
+  font-weight: 600;
+}
+
+.signup-form-card {
+  color: #3e3c49;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+}
+
+.signup-form-card .signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+.signup-form-card .signup-form input {
+  width: 90%;
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #b9b6d3;
+  font-weight: 600;
+  color: black;
+}
+
+.signup-form-card .signup-form input.invalid {
+  border: 1px solid red;
+}
+
+.signup-form-card .signup-form input::-webkit-input-placeholder {
+  font-weight: 600;
+  color: #3e3c49;
+}
+
+.signup-form-card .signup-form input:-ms-input-placeholder {
+  font-weight: 600;
+  color: #3e3c49;
+}
+
+.signup-form-card .signup-form input::-ms-input-placeholder {
+  font-weight: 600;
+  color: #3e3c49;
+}
+
+.signup-form-card .signup-form input::placeholder {
+  font-weight: 600;
+  color: #3e3c49;
+}
+
+.signup-form-card .signup-form input:focus {
+  border: 1px solid black;
+  outline: none;
+}
+
+.signup-form-card .signup-form .error {
+  color: #ff7a7a;
+  text-align: left;
+}
+
+.signup-form-card .signup-form .submit-button {
+  color: white;
+  background-color: #38cc8c;
+  border-radius: 0.25rem;
+  width: 90%;
+  padding: .8rem;
+  border: 1px solid #b9b6d3;
+  margin-top: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form-card .signup-form p {
+  width: 85%;
+  font-size: .65rem;
+  text-align: center;
+  color: #b9b6d3;
+}
+
+.signup-form-card .signup-form p .red {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+.introduction {
+  max-width: 36rem;
+}
+
+.signup {
+  max-width: 29rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .signup, .introduction {
+    width: 50%;
+  }
+  .signup {
+    gap: 1.5rem;
+  }
+  .introduction {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+    text-align: left;
+  }
+  .introduction h1 {
+    font-size: 2.8rem;
+    line-height: 1;
+  }
+  .introduction p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .annotation-card {
+    padding: 1rem 0;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2px;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
