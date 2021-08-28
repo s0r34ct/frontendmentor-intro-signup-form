@@ -10,12 +10,13 @@ body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   color: white;
+  height: 100vh;
 }
 
 .main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background: #ff7a7a url("../images/bg-intro-desktop.png") repeat center/cover;
+  background: #ff7a7a url("../images/bg-intro-desktop.png") no-repeat center/cover;
 }
 
 .page-wrapper {
